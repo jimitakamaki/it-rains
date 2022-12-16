@@ -7,9 +7,10 @@ class ItRains:
         pygame.init()
 
         # game window related
-        pygame.display.set_caption("Rain of Coins")
+        pygame.display.set_caption("It rains")
+        # change the next two values if the game window doesn't fit your screen.
         self.width = 600
-        self.height = 800
+        self.height = 700
         self.window = pygame.display.set_mode((self.width, self.height))
         self.font_large = pygame.font.SysFont("Arial", 50)
         self.font_medium = pygame.font.SysFont("Arial", 27)
@@ -193,7 +194,7 @@ class ItRains:
 
             # tip
             text = self.font_small.render(f"Tip: try using ctrl and shift while playing.", True, (255, 255, 255))
-            self.window.blit(text, (self.width / 2 - text.get_width() / 2, self.height / 2 - 300))
+            self.window.blit(text, (self.width / 2 - text.get_width() / 2, (self.height - 350) / 4 - text.get_height() / 2))
         
             # game over text
             text = self.font_large.render(f"Game over!", True, (255, 0, 0))
