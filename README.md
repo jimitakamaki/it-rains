@@ -1,4 +1,4 @@
-# It rains
+# It rains :cloud_with_rain:
 
 It rains is a simple game project I made as an exercise in Python Programming MOOC 2022. 
 
